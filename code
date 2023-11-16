@@ -1,0 +1,37 @@
+# by, Md Ibrahim Mamun
+# Automatic Pizza Order Program
+# Size & Price: Small=$15, Med=$20, Large=$25
+# Toppings & Price: Pepperoni = $2 for Small, $3 for Med & Large, Cheese=$1
+
+print("Thank you for Choosing Us for Pizza Delivery")
+size = input("What Size you want? S, M or L")
+add_pepperoni = input("Do you want to Add Pepperoni Topping? Y or N")
+add_cheese = input("Do you want to Add Cheese? Y or N")
+
+final_price = 0
+
+if size == 'S':
+  final_price=15
+  if add_pepperoni == 'Y':
+    final_price += 2
+  if add_cheese == 'Y':
+      final_price += 1
+
+elif size== 'M':
+  final_price=20
+  if add_pepperoni == 'Y':
+    final_price += 3
+  if add_cheese == 'Y':
+      final_price += 1
+
+else:
+  final_price=25
+  if add_pepperoni == 'Y':
+    final_price += 3
+  if add_cheese == 'Y':
+      final_price += 1
+
+
+
+
+print (f"Your Final Bill is = {final_price}")
